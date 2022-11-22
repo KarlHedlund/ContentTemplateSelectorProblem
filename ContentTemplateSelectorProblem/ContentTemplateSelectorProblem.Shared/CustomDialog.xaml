@@ -1,0 +1,28 @@
+﻿<ContentDialog
+    x:Class="ContentTemplateSelectorProblem.CustomDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ContentTemplateSelectorProblem"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Content Template Selector problem"
+    PrimaryButtonText="OK"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <ContentDialog.Content>
+        <TextBlock Text="The selector was not used."/>
+    </ContentDialog.Content>
+    
+    <ContentDialog.ContentTemplateSelector>
+        <local:TemplateSelector>
+            <local:TemplateSelector.ATemplate>
+                <DataTemplate>
+                    <TextBlock Text="If this shows up, the selector is active."/>
+                </DataTemplate>
+            </local:TemplateSelector.ATemplate>
+        </local:TemplateSelector>
+    </ContentDialog.ContentTemplateSelector>
+
+</ContentDialog>
+

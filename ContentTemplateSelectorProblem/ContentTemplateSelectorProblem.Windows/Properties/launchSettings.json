@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "ContentTemplateSelectorProblem.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
